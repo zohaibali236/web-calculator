@@ -10,7 +10,7 @@ let calculated = false;
 
 del.addEventListener("click", () => {
 
-    if(res.textContent == "NaN" || res.textContent == "Infinity" || res.textContent == "Syntax Error")
+    if(res.textContent == "NaN" || res.textContent == "Infinity")
     {
         clear();
     }
@@ -23,11 +23,12 @@ del.addEventListener("click", () => {
 
 operators.forEach((op) => {
     op.addEventListener("click", () => {
-        calculated = false;
         calculateResult();
         if(!res.textContent.endsWith(op.textContent))
-        res.textContent += op.textContent} );
-})
+            res.textContent += op.textContent;
+        calculated = false;
+    });
+});
 
 decimal.addEventListener("click", ()=> {
     if(!res.textContent.endsWith('.'))
