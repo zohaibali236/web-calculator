@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: gray;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    padding: 10px;
+    border-radius: 5%;
+    margin: auto;
+    width: 400px;
+    height: 530px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 80px 80px 80px 80px;
+    grid-template-rows: 60px 70px 70px 70px 70px 70px;
+    gap: 20px;
+    font-size: 24px;
+    color:  white;
+    box-shadow: 
+        5px 5px 20px black,
+        5px 5px 20px black,
+        5px 5px 20px black
+    ;
+    user-select: none;
+}
+
+.result {
+    grid-column: 1/ span 4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: end;
+    font-size: 40px;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(49, 47, 47);
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.buttons:active {
+    transform: scale(1.05);
+}
+
+.row-1 {
+    background-color: rgb(255, 0, 64);
+}
+.grid-1 {
+    background-color: gray;
+}
+
+#zero {
+    grid-column: 1/3;
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 60px;
+    padding-left: 25px;
+    margin-right: 10px;
+}
+
+
+footer {
+    text-align: center;
+    font-size: 18px;
+}
